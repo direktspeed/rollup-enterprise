@@ -9,6 +9,12 @@ It ships with a lot of plugins it directly useable See The Plugin Section
 
 It has the main diffrence that it offers tooling for complex builds it gets used as a toolkit to fork bad none valid code
 
+It is to be used in other Libs or Directly via some one who needs full controll over the build process. This is the right Choice for the coder who has already done everything.
+
+It is based always on the latest rollup you can use it as drop in replacement for using rollup programatical. Simply import { rollup } from @direktspeed/rollup-enterprise
+
+This Exports everything that rollup uses internal and public
+
 
 ## Importent for package authors
 Please do not relay on package.json always use your-package.js (in case of SystemJS) and your-package.mjs as output. It is the only solution that works in all environments. Most best is to even avoid a .cjs version as ESM can always get imported even via CJS via import().

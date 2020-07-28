@@ -1,5 +1,5 @@
 import rollupLib from 'rollup-plugin-create-lib.js'
-import { rollup, newGraph, getOutputOptionsAndPluginDriver } from '../dist/es/rollup.js'
+import { rollup, newGraph, getOutputOptionsAndPluginDriver } from '../../dist/es/rollup.js'
 import alias from '@rollup/plugin-alias';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
@@ -12,11 +12,11 @@ const { string } = stringExports
 console.log(string)
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript';
-import addCliEntry from '../build-plugins/add-cli-entry.js';
-import conditionalFsEventsImport from '../build-plugins/conditional-fsevents-import.js';
-import emitModulePackageFile from '../build-plugins/emit-module-package-file.js';
-import esmDynamicImport from '../build-plugins/esm-dynamic-import.js';
-import getLicenseHandler from '../build-plugins/generate-license-file.js';
+import addCliEntry from '../../build-plugins/add-cli-entry.js';
+import conditionalFsEventsImport from '../../build-plugins/conditional-fsevents-import.js';
+import emitModulePackageFile from '../../build-plugins/emit-module-package-file.js';
+import esmDynamicImport from '../../build-plugins/esm-dynamic-import.js';
+import getLicenseHandler from '../../build-plugins/generate-license-file.js';
 //import pkg from './package.json';
 const pkg = { version:  "2.21.0" }
 import MagicString from 'magic-string';

@@ -34,13 +34,10 @@ export default function multiEntry(conf={}) {
 
   return {
     buildStart() {
-        this.emitFile('chunk',outputFile)
+        this.emitFile({ type: 'chunk', id: outputFile })
     },
     resolveId(id) {
-      if (id === outputFile) {
-        return outputFile;
-      }
-      return null
+      return id === outputFile ? id : null;
     },
     load(id) {
       if (id === outputFile) {

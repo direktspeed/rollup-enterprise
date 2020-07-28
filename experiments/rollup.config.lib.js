@@ -7,12 +7,12 @@ import path from 'path';
 import { string } from 'rollup-plugin-string';
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript';
-import addCliEntry from './build-plugins/add-cli-entry.js';
-import conditionalFsEventsImport from './build-plugins/conditional-fsevents-import';
-import emitModulePackageFile from './build-plugins/emit-module-package-file.js';
-import esmDynamicImport from './build-plugins/esm-dynamic-import.js';
-import getLicenseHandler from './build-plugins/generate-license-file';
-import pkg from './package.json';
+import addCliEntry from '../../build-plugins/add-cli-entry.js';
+import conditionalFsEventsImport from '../../build-plugins/conditional-fsevents-import';
+import emitModulePackageFile from '../../build-plugins/emit-module-package-file.js';
+import esmDynamicImport from '../../build-plugins/esm-dynamic-import.js';
+import getLicenseHandler from '../../build-plugins/generate-license-file';
+import pkg from '../../package.json';
 import MagicString from 'magic-string';
 
 const commitHash = (function () {

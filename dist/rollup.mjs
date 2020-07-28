@@ -5704,7 +5704,7 @@ function umd(magicString, { dependencies, exports, hasExports, indentString: t, 
     return magicString.trim().indent(t).append(wrapperOutro).prepend(wrapperIntro);
 }
 
-var finalisers = { system, es };
+var finalisers = { system, amd, cjs, es, iife, umd };
 
 const extractors = {
     ArrayPattern(names, param) {
@@ -19519,14 +19519,11 @@ function watch(configs) {
 
 export { createCommonjsModule, defaultOnWarn, ensureArray, fseventsImporter, getCjsExportFromNamespace, rollup, rollupInternal, version, warnUnknownOptions, watch };
 
-export { applyOptionHook, normalizePlugins, handleGenerateWrite, getOutputOptionsAndPluginDriver, getOutputOptions, createOutput, getSortingFileType,
-        //Create Graph
-        Graph,getInputOptions,
-        //Create Bundle
-        Bundle,getOutputOptionsAndPluginDriver,
-        //Write bundle
-        writeOutputFile,
-        
-        // Additional
-        Module,Chunk,ExternalModule
-        }
+export { 
+    applyOptionHook, normalizePlugins, handleGenerateWrite, getOutputOptions, getSortingFileType,
+    Graph,getInputOptions,//Create Graph
+    Bundle,getOutputOptionsAndPluginDriver,//Create Bundle
+    writeOutputFile, //Write bundle
+    createOutput, //user readable output from bundle generate and write
+    Module,Chunk,ExternalModule// Additional low level apis
+}

@@ -1,0 +1,1 @@
+https://github.com/proteriax/rollup-plugin-ignore

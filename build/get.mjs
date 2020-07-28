@@ -84,7 +84,7 @@ const files = ['rollup.d.ts','es/shared/rollup.js','es/shared/watch.js','es/roll
         return writeFileSync(`../dist/rollup.d.ts`,code)
     }
     
-    //writeFileSync(`../dist/${target}`,code)
+    writeFileSync(`../dist/${target}`,code)
 
 })
 
