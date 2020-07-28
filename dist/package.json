@@ -1,0 +1,17 @@
+{
+    "type": "module",
+    "name": "rollup-enterprise",
+    "version": "2.23.0",
+    "description": "Next-generation ES module bundler",
+    "main": "rollup.mjs",
+    "module": "rollup.mjs",
+    "typings": "rollup.d.ts",
+    "exports": {
+        "import": "./rollup.mjs",
+        "node": "./rollup.mjs",
+        "browser": "./rollup.browser.mjs"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}
