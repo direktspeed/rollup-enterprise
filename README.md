@@ -84,7 +84,8 @@ This works also in browsers
 ### interop-inspector + lebab
 Trys to correct problems when CJS gets imported 
 
-### lebab
+## Resources
+- https://gist.github.com/frank-dspeed/a5aa14c42465b6226205fc373fe3ae8e
 
 
 ### Coperation with 
